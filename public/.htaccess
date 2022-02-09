@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine on
+    RewriteBase /
+
+	#index
+	RewriteRule ^/?$ index.php?page=welcome [L]
+
+    # Example for New site
+    # RewriteRule ^pagename?$ index.php?page=costumname -> in app.php [L] (Yourdomain.com/pagename)
+    # or RewriteRule ^pagename/name2?$ index.php?page=costumname -> in app.php [L] (Yourdomain.com/pagename/name2)
+    # or a page with GET: RewriteRule ^shop/product/([A-Za-z0-9-]+)?$ index.php?page=costumname -> in app.php&costumgetname=$1 [NC,L] (Example: Yourdomain.com/shop/product/1)
+    # |-> GET with $_GET['costumgetname']
+
+</IfModule>
+<Files 403.shtml>
+    order allow,deny
+    allow from all
+</Files>
