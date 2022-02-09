@@ -1,4 +1,4 @@
-AlvaCore PHP Framework
+AlvaCore PHP Framework<br />
 Steps to set up:
 
 → 1: Upload the Files to your Server.<br />
