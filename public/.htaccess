@@ -5,6 +5,9 @@
 
 	#index
 	RewriteRule ^/?$ index.php?page=welcome [L]
+	
+	#debug
+    	RewriteRule ^DEBUG?$ index.php?page=DEBUG [L]
 
     # Example for New site
     # RewriteRule ^pagename?$ index.php?page=costumname -> in app.php [L] (Yourdomain.com/pagename)
